@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\main\main.cpp" />
+    <ClCompile Include="src\main\physics.cpp" />
+    <ClCompile Include="src\main\texture.cpp" />
+    <ClCompile Include="src\main\tile.cpp" />
+    <ClCompile Include="src\entity\entity.cpp" />
+    <ClCompile Include="src\stb_image\stb_image.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\main\physics.h" />
+    <ClInclude Include="src\main\texture.h" />
+    <ClInclude Include="src\main\tile.h" />
+    <ClInclude Include="src\main\util.h" />
+    <ClInclude Include="src\entity\player.h" />
+    <ClInclude Include="src\entity\item.h" />
+    <ClInclude Include="src\entity\entity.h" />
+    <ClInclude Include="src\entity\enemy.h" />
+    <ClInclude Include="src\maps\test.h" />
+    <ClInclude Include="src\stb_image\stb_image.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="The Myth of Satonia.aps" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\entity\placeholder.png" />
+    <Image Include="res\menu\logo.png" />
+    <Image Include="res\tile\brick.png" />
+    <Image Include="res\tile\floor.png" />
+    <Image Include="res\tile\placeholder.png" />
+    <Image Include="res\tile\wall.png" />
+    <Image Include="res\tile\water.png" />
+  </ItemGroup>
+</Project>
