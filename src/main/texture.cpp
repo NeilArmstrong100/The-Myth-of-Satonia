@@ -1,8 +1,8 @@
 #include "texture.h"
 
-#include "../stb_image/stb_image.h"
+#include "../stb/stb_image.h"
 
-std::array<std::unique_ptr<Texture>, 6> Texture::s_textures;
+std::array<std::unique_ptr<Texture>, 12> Texture::s_textures;
 
 Texture::Texture(const std::string& path)
 	: m_path(path), m_buffer(nullptr), m_width(0), m_height(0), m_nr_channels(0)
@@ -46,12 +46,20 @@ void Texture::unbind() const
 
 void Texture::load_textures() {
 	// Tile
-	s_textures[0] = std::make_unique<Texture>("res/tile/floor.png");
-	s_textures[1] = std::make_unique<Texture>("res/tile/wall.png");
-	s_textures[2] = std::make_unique<Texture>("res/tile/brick.png");
-	s_textures[3] = std::make_unique<Texture>("res/tile/water.png");
-	s_textures[4] = std::make_unique<Texture>("res/tile/placeholder.png");
+	s_textures[0] = std::make_unique<Texture>("res/textures/tile/floor.png");
+	s_textures[1] = std::make_unique<Texture>("res/textures/tile/wall.png");
+	s_textures[2] = std::make_unique<Texture>("res/textures/tile/brick.png");
+	s_textures[3] = std::make_unique<Texture>("res/textures/tile/water.png");
+	s_textures[4] = std::make_unique<Texture>("res/textures/tile/placeholder.png");
 
 	// Entity
-	s_textures[5] = std::make_unique<Texture>("res/entity/placeholder.png");
+	s_textures[5] = std::make_unique<Texture>("res/textures/entity/placeholder.png");
+	s_textures[6] = std::make_unique<Texture>("res/textures/entity/chest_closed.png");
+	s_textures[7] = std::make_unique<Texture>("res/textures/entity/chest_opened.png");
+	s_textures[8] = std::make_unique<Texture>("res/textures/entity/door_locked.png");
+	s_textures[9] = std::make_unique<Texture>("res/textures/entity/door_closed.png");
+	s_textures[10] = std::make_unique<Texture>("res/textures/entity/door_opened.png");
+
+	// Item
+	s_textures[11] = std::make_unique<Texture>("res/textures/item/key.png");
 }

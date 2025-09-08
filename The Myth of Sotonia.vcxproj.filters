@@ -4,21 +4,24 @@
     <ClCompile Include="src\main\main.cpp" />
     <ClCompile Include="src\main\physics.cpp" />
     <ClCompile Include="src\main\texture.cpp" />
-    <ClCompile Include="src\main\tile.cpp" />
-    <ClCompile Include="src\entity\entity.cpp" />
+    <ClCompile Include="src\tile\tile.cpp" />
     <ClCompile Include="src\stb_image\stb_image.cpp" />
+    <ClCompile Include="src\stb_image\stb_image.cpp" />
+    <ClCompile Include="src\stb_image\stb_truetype.cpp" />
+    <ClCompile Include="src\main\font.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\main\physics.h" />
     <ClInclude Include="src\main\texture.h" />
-    <ClInclude Include="src\main\tile.h" />
+    <ClInclude Include="src\tile\tile.h" />
     <ClInclude Include="src\main\util.h" />
-    <ClInclude Include="src\entity\player.h" />
-    <ClInclude Include="src\entity\item.h" />
-    <ClInclude Include="src\entity\entity.h" />
-    <ClInclude Include="src\entity\enemy.h" />
+    <ClInclude Include="src\entity\component.h" />
     <ClInclude Include="src\maps\test.h" />
     <ClInclude Include="src\stb_image\stb_image.h" />
+    <ClInclude Include="src\entity\registry.h" />
+    <ClInclude Include="src\stb_image\stb_image.h" />
+    <ClInclude Include="src\stb_image\stb_truetype.h" />
+    <ClInclude Include="src\main\font.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="The Myth of Satonia.aps" />
@@ -31,5 +34,20 @@
     <Image Include="res\tile\placeholder.png" />
     <Image Include="res\tile\wall.png" />
     <Image Include="res\tile\water.png" />
+    <Image Include="res\entity\door_opened.png" />
+    <Image Include="res\entity\door_locked.png" />
+    <Image Include="res\entity\door_closed.png" />
+    <Image Include="res\entity\chest_opened.png" />
+    <Image Include="res\entity\chest_closed.png" />
+    <Image Include="res\item\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="res\fonts\HydrophiliaIced-Regular.otf" />
+    <Font Include="res\fonts\HydrophiliaIced-Regular.ttf" />
+    <Font Include="res\fonts\HydrophiliaLiquid-Regular.otf" />
+    <Font Include="res\fonts\HydrophiliaLiquid-Regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="res\fonts\README.txt" />
   </ItemGroup>
 </Project>

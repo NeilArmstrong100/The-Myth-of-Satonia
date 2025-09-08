@@ -14,7 +14,7 @@ private:
 	byte* m_buffer;
 	int m_width, m_height, m_nr_channels;
 public:
-	static std::array<std::unique_ptr<Texture>, 6> s_textures;
+	static std::array<std::unique_ptr<Texture>, 12> s_textures;
 
 	Texture(const std::string&);
 	~Texture();

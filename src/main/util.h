@@ -31,8 +31,6 @@ namespace util
 	{
 		extern bool physics_done, running;
 		extern std::thread physics_thread;
-		extern std::mutex mtx;
-		extern std::condition_variable cv;
 	}
 
 	extern Point snap_grid(const Point, const float);
