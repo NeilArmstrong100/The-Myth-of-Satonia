@@ -6,3 +6,5 @@ If you wish to use the source code to rebuild, or edit the project, go ahead at 
 
 Hydrophillia:
 https://www.1001fonts.com/hydrophilia-font.html
+## 2025/12/9 Announcement
+Sorry for the longer wait for an update, but I've been on heavy debugging, so much so I was stuck on the same 2 bugs for the past month and a half (I know, irresponsible of me) and plan to release 0.4.0 shortly. I also plan to release a roadmap following the release of 0.4.0. Expect 0.4.0 to come before the end of the year.
