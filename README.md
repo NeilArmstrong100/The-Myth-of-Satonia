@@ -13,9 +13,9 @@ Add health/defense, overhaul the GUI, add an inventory, and add interactable NPC
 Add visual effects, improve art, add sound effects, and add music.
 #### v0.7 - TBD ❓
 Not yet planned for.
-### Fixes
+### Fixes 🛠️
 Expect me to focus heavily on bug fixing, as I do not want a non-functioning game to be released.
-### When to expect updates
+### When to expect updates ⏱️
 Expect updates every 1-3 months, as I have school to attend to and update size may vary, but do expect occasional patches or mini-updates.
 
 Hydrophillia:
