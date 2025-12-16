@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\main\main.cpp" />
+    <ClCompile Include="src\main\physics.cpp" />
+    <ClCompile Include="src\main\texture.cpp" />
+    <ClCompile Include="src\stb\stb_implementation.cpp" />
+    <ClCompile Include="src\gui\gui.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\main\physics.h" />
+    <ClInclude Include="include\main\texture.h" />
+    <ClInclude Include="include\tile\tile.h" />
+    <ClInclude Include="include\main\util.h" />
+    <ClInclude Include="include\entity\component.h" />
+    <ClInclude Include="include\maps\test_1.h" />
+    <ClInclude Include="include\entity\registry.h" />
+    <ClInclude Include="include\stb\stb_image.h" />
+    <ClInclude Include="include\stb\stb_truetype.h" />
+    <ClInclude Include="include\gui\gui.h" />
+    <ClInclude Include="include\maps\test_2.h" />
+    <ClInclude Include="include\maps\outskirts.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="The Myth of Satonia.aps" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\textures\entity\chest_closed.png" />
+    <Image Include="res\textures\entity\chest_opened.png" />
+    <Image Include="res\textures\entity\door_closed.png" />
+    <Image Include="res\textures\entity\door_locked.png" />
+    <Image Include="res\textures\entity\door_opened.png" />
+    <Image Include="res\textures\entity\placeholder.png" />
+    <Image Include="res\textures\item\key.png" />
+    <Image Include="res\textures\tile\brick.png" />
+    <Image Include="res\textures\tile\floor.png" />
+    <Image Include="res\textures\tile\placeholder.png" />
+    <Image Include="res\textures\tile\wall.png" />
+    <Image Include="res\textures\tile\water.png" />
+    <Image Include="res\textures\tile\grass.png" />
+    <Image Include="res\textures\tile\sand.png" />
+    <Image Include="res\textures\entity\stump.png" />
+    <Image Include="res\textures\entity\slime.png" />
+    <Image Include="res\textures\entity\player.png" />
+    <Image Include="res\textures\entity\log.png" />
+    <Image Include="res\textures\entity\leaves_upper_right.png" />
+    <Image Include="res\textures\entity\leaves_upper_left.png" />
+    <Image Include="res\textures\entity\leaves_up.png" />
+    <Image Include="res\textures\entity\leaves_right.png" />
+    <Image Include="res\textures\entity\leaves_lower_right.png" />
+    <Image Include="res\textures\entity\leaves_lower_left.png" />
+    <Image Include="res\textures\entity\leaves_left.png" />
+    <Image Include="res\textures\entity\leaves_down.png" />
+    <Image Include="res\textures\entity\leaves.png" />
+    <Image Include="res\textures\entity\gate.png" />
+    <Image Include="res\textures\entity\blank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="res\fonts\HydrophiliaIced-Regular.otf" />
+    <Font Include="res\fonts\HydrophiliaIced-Regular.ttf" />
+    <Font Include="res\fonts\HydrophiliaLiquid-Regular.otf" />
+    <Font Include="res\fonts\HydrophiliaLiquid-Regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="res\fonts\README.txt" />
+  </ItemGroup>
+</Project>
