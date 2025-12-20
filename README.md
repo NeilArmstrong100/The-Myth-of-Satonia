@@ -8,15 +8,17 @@ Also, you need to include the "include" folder with your project, otherwise none
 Hydrophillia:
 https://www.1001fonts.com/hydrophilia-font.html
 ## Roadmap 🚀
-Here is the planned roadmap as of 2025/12/15
+Here is the planned roadmap as of 2025/12/19
 ### Additions
 #### v0.5 - RPG Overhaul ⚔️
 Add health/defense, overhaul the GUI, add an inventory, and add interactable NPCs.
 #### v0.6 - Nothing Like Home 🏠
 Add visual effects, improve art, add sound effects, and add music.
-#### v0.7 - TBD ❓
+#### v0.7 - Storytelling 📖
+Add story elements leading into full-release.
+#### v0.8 - TBD❓
 Not yet planned for.
 ### Fixes 🛠️
 Expect me to focus heavily on bug fixing, as I do not want a non-functioning game to be released.
 ### When to expect updates ⏱️
-Expect updates every 1-3 months, as I have school to attend to and update size may vary, but do expect occasional patches or mini-updates.
+Expect updates every 1-3 months, as I have school and update size may vary, but do expect occasional patches or mini-updates.
