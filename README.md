@@ -8,15 +8,15 @@ Also, you need to include the "include" folder with your project, otherwise none
 Hydrophillia:
 https://www.1001fonts.com/hydrophilia-font.html
 ## Roadmap 🚀
-Here is the planned roadmap as of 2025/12/19
+Here is the planned roadmap for beta as of 2025/12/19
 ### Additions
-#### v0.5 - RPG Overhaul ⚔️
+#### v0.5b - RPG Overhaul ⚔️
 Add health/defense, overhaul the GUI, add an inventory, and add interactable NPCs.
-#### v0.6 - Nothing Like Home 🏠
+#### v0.6b - Nothing Like Home 🏠
 Add visual effects, improve art, add sound effects, and add music.
-#### v0.7 - Storytelling 📖
+#### v0.7b - Storytelling 📖
 Add story elements leading into full-release.
-#### v0.8 - TBD❓
+#### v0.8b - TBD❓
 Not yet planned for.
 ### Fixes 🛠️
 Expect me to focus heavily on bug fixing, as I do not want a non-functioning game to be released.
