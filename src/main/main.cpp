@@ -308,10 +308,14 @@ void entity_render()
 
         float x = transform->position.x - camera_x;
         float y = transform->position.y - camera_y;
+
         float top = y + transform->size.y;
         float bottom = y;
         float left = x * scale_x;
         float right = (x + transform->size.x) * scale_x;
+
+        if (right < -1 || left > 1) continue;
+        if (top < -1 || bottom > 1) continue;
 
         texture->bind();
         glEnable(GL_TEXTURE_2D);
@@ -349,10 +353,14 @@ void map_render()
 
         float x = tile.get_position().x - camera_x;
         float y = tile.get_position().y - camera_y;
+
         float top = y + Tile::s_size;
         float bottom = y;
         float left = x * scale_x;
         float right = (x + Tile::s_size) * scale_x;
+
+        if (right < -1 || left > 1) continue;
+        if (top < -1 || bottom > 1) continue;
 
         texture->bind();
         glEnable(GL_TEXTURE_2D);

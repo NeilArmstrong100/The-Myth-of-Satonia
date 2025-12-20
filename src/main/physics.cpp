@@ -312,15 +312,17 @@ void chest_event()
         Inventory* pi = registry->get_component<Inventory>(player); // Player inventory, not PI
         if (!pi) continue;
 
+        Inventory* inv = registry->get_component<Inventory>(entity);
+
         // If chest is opened, transfer first item in chest to player inventory
-        if (useable->toggle)
+        if (useable->toggle && !inv->opened)
         {
-            Inventory* inv = registry->get_component<Inventory>(entity);
             if (!inv || inv->contents.empty()) continue;
             Sprite* cs = registry->get_component<Sprite>(entity);
             if (cs) cs->texture_id = std::byte(7);
             pi->contents.push_back(inv->contents.at(0));
             inv->contents.clear();
+            inv->opened = true;
         }
     }
 }
@@ -333,34 +335,28 @@ void door_event()
         Entity entity = pair.first;
 
         Sprite* sp = registry->get_component<Sprite>(entity);
-        if (!sp || sp->texture_id == std::byte(35))
-            continue;
+        if (!sp || sp->texture_id == std::byte(35)) continue;
 
         Useable* useable = registry->get_component<Useable>(entity);
         Lock* lock = registry->get_component<Lock>(entity);
-        if (!useable || !lock)
-            continue;
+        if (!useable || !lock) continue;
 
         // If door is locked
         if (!lock->open)
         {
             Entity player = registry->get_all<Player>().empty() ? 0 : registry->get_all<Player>().begin()->first;
-            if (player == 0)
-                continue;
+            if (player == 0) continue;
 
             auto* contents = registry->get_component<Inventory>(player);
-            if (!contents)
-                continue;
+            if (!contents) continue;
 
-            // Count keys by inspecting player's inventory items directly
+            // Count keys by inspecting player's inventory directly
             int keys = 0;
             for (Entity content : contents->contents)
                 if (registry->get_component<Key>(content))
                     ++keys;
 
-            // If player has no keys, ensure the useable toggle is false
-            if (keys == 0)
-                useable->toggle = false;
+            if (keys == 0) useable->toggle = false;
 
             // If player has a key and is interacting with the door, open the door and consume one key
             if (keys > 0 && useable->toggle)
