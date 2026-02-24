@@ -16,12 +16,12 @@ Add health/defense, overhaul the GUI, add an inventory, and add interactable NPC
 Add visual effects, improve art, add sound effects, and add music.
 #### v0.7b - Storytelling 📖
 Add story elements leading into full-release.
-
-## 2026/23/2 Announcement
-Sorry that I've been absent on the project, I've been working on other projects because I was getting burnout from this project. I am becoming more familiar with modern OpenGL and programming in general, so I will make another announcement when I continue working on this project.
 #### v0.8b - TBD❓
 Not yet planned for.
 ### Fixes 🛠️
 Expect me to focus heavily on bug fixing, as I do not want a non-functioning game to be released.
 ### When to expect updates ⏱️
 Expect updates every 1-3 months, as I have school and update size may vary, but do expect occasional patches or mini-updates.
+
+## 2026/23/2 Announcement
+Sorry that I've been absent on the project, I've been working on other projects because I was getting burnout from this project. I am becoming more familiar with modern OpenGL and programming in general, so I will make another announcement when I continue working on this project.
