@@ -16,6 +16,9 @@ Add health/defense, overhaul the GUI, add an inventory, and add interactable NPC
 Add visual effects, improve art, add sound effects, and add music.
 #### v0.7b - Storytelling 📖
 Add story elements leading into full-release.
+
+## 2026/23/2 Announcement
+Sorry that I've been absent on the project, I've been working on other projects because I was getting burnout from this project. I am becoming more familiar with modern OpenGL and programming in general, so I will make another announcement when I continue working on this project.
 #### v0.8b - TBD❓
 Not yet planned for.
 ### Fixes 🛠️
